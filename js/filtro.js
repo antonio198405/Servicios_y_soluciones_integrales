@@ -9,7 +9,8 @@ $(function () {
             $('.cont-work').filter('.' + valor).show('1000');
         }
     });
-
+// Realizo las funciones para que cuando en el menu principal de click en alguno de los link, me lleve
+// directamente a la pagina requerida
     let login = $('#login').offset().top,
         servicios = $('#servicios').offset().top,
         registro = $('#registro').offset().top,
