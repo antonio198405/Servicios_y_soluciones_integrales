@@ -26,7 +26,7 @@
   
   
   /* Header 
-  Coloco una imagen de fondo en la pagina de incio y le doy tres colores al fondo para mejorar la visealizacion */
+  Coloco una imagen de fondo en la pagina de incio y le doy tres colores al fondo para mejorar la visualizacion */
   header{
     width: 100%;
     height:600px;
@@ -109,8 +109,70 @@
   
   .textos>h2{font-size: 30px; font-weight: 300;}
 
+  /* Login  
+  Le doy forma, ubicacion a la pagina de registro de usuarios y color a los botones */
+ 
+  #login {
+    font-family: sans-serif;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
   
-  /* Main */
+    &.bg-gray {
+      background-color: #070707;
+    }
+
+    form,
+    .card,
+    #register {
+      width: 580px;
+    }
+  
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  
+    input,
+    select {
+      margin-bottom: 10px;
+      display: block;
+      width: 100%;
+      height: 35px;
+      padding: 10px;
+    } 
+  
+    button {
+      background: crimson;
+      height: 40px;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 1rem;
+      width: 100%;
+    }
+  
+    #updateProfile,
+    #changeAvatar,
+    #register {
+    display: none;
+    }
+  
+    #avatar {
+    cursor: pointer;
+    }
+  
+    #showRegister,
+    #hideRegister {
+      margin-top: 10px;
+      display: block;
+    }
+  }
+
+  
+    /* Main */
   
   .contenedor{
     margin:auto;
@@ -120,7 +182,7 @@
     text-align: center;
     overflow: hidden;
   }
-    /* En este contenedor le doy ubicacion, colo, tamano a el eslogan de la paina principal */
+    /* En este contenedor le doy ubicacion, color, tamano a el eslogan de la paina principal */
   .contenedor h3{
     font-size: var(--titulos);
     color: var(--color1);
@@ -143,7 +205,7 @@
     background: var(--color1);
     margin-bottom: var(--espacios-contenido);
   }
-  /* Ordenamos lao cuadros que se encuentran en la pagina de servicios*/
+  /* Ordenamos los cuadros que se encuentran en la pagina de servicios*/
   .card{
     display: flex;
     justify-content: space-around;

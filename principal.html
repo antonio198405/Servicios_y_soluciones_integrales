@@ -25,10 +25,11 @@
                 </div>
                 <div class="enlaces" id="enlaces" >
                     <a href="#" id="enlace-inicio" class="btn-header">Inicio</a>
-                    <a href="#" id="enlace-servicio" class="btn-header">Servicios</a>
+                    <a href="#" id="enlace-servicios" class="btn-header">Servicios</a>
                     <a href="#" id="enlace-registro" class="btn-header">Registro</a>
                     <a href="#" id="enlace-desarrollo" class="btn-header">Desarrollo</a>
                     <a href="#" id="enlace-contacto" class="btn-header">Contacto</a>
+                    <a href="#" id="enlace-login" class="btn-header">Login</a>
                 </div>
                 <div class="icono" id="open">
                     <span>&#9776;</span>
@@ -41,10 +42,55 @@
             <h1></h1>
             <h2></h2>
         </div>
+
+        
     </header>
-  
+  <!-- Creo una contenedor en donde se realizara el login y el registro de usuarios-->
     <main>
-        <section class="team contenedor" id="servicio">
+        <section class="team contenedor" id="login">
+            <div class="card">
+                <div class="content-card">
+                    <form action="#" id="formLogin">
+                        <div>
+                          <label for="username">Usuario</label>
+                          <input type="text" name="username" id="username">
+                        </div>
+                        <div>
+                          <label for="pass">Contraseña</label>
+                          <input type="password" name="pass" id="pass">
+                        </div>
+                        <div>
+                          <button type="button" id="btnLogin">Iniciar sesión</button>
+                          <a href="#" id="showRegister">¿Aún no tienes cuenta? Regístrate ahora</a>
+                        </div>
+                      </form>
+                      <div id="register">
+                        <div>
+                          <label for="nameRegister">Nombre</label>
+                          <input type="text" name="nameRegister" id="nameRegister">
+                        </div>
+                        <div>
+                          <label for="phoneRegister">Teléfono</label>
+                          <input type="text" name="phoneRegister" id="phoneRegister">
+                        </div>
+                        <div>
+                          <label for="emailRegister">Correo</label>
+                          <input type="text" name="emailRegister" id="emailRegister">
+                        </div>
+                        <div>
+                          <label for="passwordRegister">Contraseña</label>
+                          <input type="password" name="passwordRegister" id="passwordRegister">
+                        </div>
+                        <div>
+                          <button type="button" id="btnRegister">Registrarse</button>
+                          <a href="#" id="hideRegister">¿Ya tienes cuenta?, Inicia sesión</a>
+                        </div>
+                      </div>
+                </div>
+                
+
+        </section>       
+        <section class="team contenedor" id="servicios">
             <div class="card">
                 <div class="content-card">
                     <div class="people">
@@ -109,13 +155,20 @@
         <section class="work contenedor" id="desarrollo">
             <h3>Development Team</h3>
             <p class="after">Contamos con un equipo de desarrollo de software completo para brindarle una agradable experiencia al contratar con nosotros, garantizamos que nuestros colaboradores trabajan bajo los más altos estándares de calidad.</p>
-
+            <div class="botones-work">
+                <ul>
+                    <li class="filter active" data-nombre='todos'>Todos</li>
+                </ul>
+            </div>
             <div class="galeria-work">
                 <div class="img-work">
                     <img src="img/desarrolloweb.png" alt="">
                 </div>
             </div>
+            
+
         </section>
+    
     </main>
 
     <footer id="contacto">
@@ -139,6 +192,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/programacion.js"></script>
     <script src="js/filtro.js"></script>
+    <script src="js/usuarios.js"></script>
 
     
 </body>

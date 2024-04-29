@@ -10,15 +10,17 @@ $(function () {
         }
     });
 
-    let inicio = $('#inicio').offset().top,
+    let login = $('#login').offset().top,
         servicios = $('#servicios').offset().top,
         registro = $('#registro').offset().top,
+        desarrollo = $ ('#desarrollo').offset().top,
         contacto = $('#contacto').offset().top;
 
     window.addEventListener('resize', function(){
-        let inicio = $('#inicio').offset().top,
+        let login = $('#login').offset().top,
         servicios = $('#servicios').offset().top,
         registro = $('#registro').offset().top,
+        desarrollo = $ ('#desarrollo').offset().top,
         contacto = $('#contacto').offset().top;
     });
 
@@ -29,24 +31,31 @@ $(function () {
         },600);
     });
 
+    $('#enlace-login').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: login -100
+        },600);
+    });
+
     $('#enlace-servicios').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: equipo -100
+            scrollTop: servicios -100
         },600);
     });
 
     $('#enlace-registro').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: servicio -100
+            scrollTop: registro -100
         },600);
     });
 
-    $('#enlace-contacto').on('click', function(e){
+    $('#enlace-desarrollo').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: trabajo -100
+            scrollTop: desarrollo -100
         },600);
     });
 
